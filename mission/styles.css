@@ -1,0 +1,59 @@
+.content{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #006EB6;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+    padding: 40px 150px 100px 150px;
+    border: black 1px solid;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.header h1{
+    font-size: 35px;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.header h3{
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-bottom: rgb(162, 162, 162) 0.5px solid;
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+.does-list{
+    color: black;
+    
+}
+
+p{
+    line-height: 30px;
+    text-align: left;
+    color: black;
+}
+
+
+
+footer{
+    display: flex;
+    width: 600px;
+}
+
+ol li{
+    padding: 10px;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
