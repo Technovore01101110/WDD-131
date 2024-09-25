@@ -8,6 +8,11 @@
     border: black 1px solid;
 }
 
+#pageTheme{
+    background-color: rgb(230 230 230);
+    border: none;
+}
+
 main{
     padding-bottom: 20px;
 }
@@ -24,7 +29,7 @@ main{
     letter-spacing: 4px;
 }
 
-.header h3{
+.header h2{
     font-size: 15px;
     letter-spacing: 3px;
     border-bottom: rgb(162, 162, 162) 0.5px solid;
@@ -54,4 +59,33 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 150px;
+}
+
+
+/* Dark Theme */
+
+.dark{
+    background-color: #333;
+    color: white;
+
+}
+
+.dark p{
+    color: white;
+}
+
+.dark .content{
+    border: white 2px solid;
+}
+
+.dark header h1{
+    color: white;
+} 
+
+.dark header h2{
+    color: #a5dbff;
+}
+
+.dark .does-list{
+    color: white;
 }
