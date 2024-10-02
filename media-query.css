@@ -1,0 +1,35 @@
+body{
+font-family: "Roboto", system-ui;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 10px;
+    border: rgb(0, 201, 201) 1px solid;
+    background-color: aqua;
+   }
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section{
+    /* width: 300px; */
+    background-color: white;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 500px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header{
+        color: white;
+        background-color: black;
+    }
+}
