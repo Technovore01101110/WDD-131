@@ -31,7 +31,7 @@ function viewHandler(){
     const imgTarget = event.target;
     const image = imgTarget.src.split('-');
     const bigImage = image[0] + '-full.jpeg';
-    const html = viewerTemplate(bigImage);
+    const html = viewerTemplate(bigImage, imgTarget.alt);
     document.body.insertAdjacentHTML("afterbegin", html);
     document.querySelector('.close-viewer').addEventListener('click', closeViewer);
 }
