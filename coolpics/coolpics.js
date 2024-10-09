@@ -30,7 +30,8 @@ function closeViewer(){
 function viewHandler(){
     const imgTarget = event.target;
     const image = imgTarget.src.split('-');
-    const bigImage = image[0] + '-full.jpeg';
+    //I adjusted this because of the site's name has a "-"
+    const bigImage = image[0] + image[1] + '-full.jpeg';
     const html = viewerTemplate(bigImage, imgTarget.alt);
     document.body.insertAdjacentHTML("afterbegin", html);
     document.querySelector('.close-viewer').addEventListener('click', closeViewer);
