@@ -10,6 +10,7 @@
  --secondary-font: Mooli, san-serif;
  }
 
+
  body{
    margin: 0;
     color: var(--text-dark);
@@ -17,6 +18,34 @@
     font-size: 1.2em;
     text-align: center;
  }
+
+.viewer{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.75);
+   display: grid;
+   grid-template-rows: 33% 34% 33%;
+}
+
+.viewer button{
+   background-color: transparent;
+   border: none;
+   text-align: right;
+   font-size: 30px;
+   color: white;
+}
+
+.viewer img{
+   max-height: 100%;
+   object-fit: contain;
+   border: none;
+   box-shadow: none;
+   margin: auto;
+   color: white;
+}
 
 header{
    background-color: var(--primary-color);
@@ -28,7 +57,7 @@ h1{
    padding-top: 30px;
 }
 
- .menuButton{
+ .menu-button{
    width: 100%;
    background-color: var(--primary-color);
    border: none;
@@ -46,6 +75,10 @@ h1{
    gap: 10px;
  }
 
+.hide{
+   display: none;
+}
+
 nav a{
    font-size: 25px;
    color: var(--text-light);
@@ -62,7 +95,7 @@ h2{
    margin: 0 auto 20px auto;
 }
 
- img {
+ .gallery img {
 	 max-width: 100%;
     width: 250px;
     height: 250px;
@@ -93,6 +126,19 @@ h2{
  }
 
  @media screen and (min-width: 1000px ) {
+   .viewer{
+      top: 50px;
+      bottom: 50px;
+      right: 4%;
+      left: 4%;
+      padding: 0 20px;
+      grid-template-rows: 12.5% 75% 12.5%;
+   }
+   
+   .viewer img{
+      padding: 0 20px;
+   }
+   
    header button{
       display: none;
    }
