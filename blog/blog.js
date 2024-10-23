@@ -47,7 +47,7 @@ const articles = [
 		genre: "Fantasy",
 		stars: "⭐⭐⭐⭐⭐"
 	}
-]
+];
 
 function htmlRender(article) {
 	let section = document.querySelector('.results');
@@ -64,7 +64,7 @@ function htmlRender(article) {
                         <img src=${article.imgSrc} alt=${article.imgAlt}>
                     </div>
                     <p>
-						${article.description}
+						${article.description} <a href="">Read more...</a>
                     </p>
                 </div>
             </article>`;
