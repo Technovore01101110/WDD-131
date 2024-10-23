@@ -30,7 +30,8 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	},{
+	},
+	{
 		id: 3,
 		title: "Belgariad Book One: Pawn of Prophecy",
 		date: "Feb 12, 2022",
