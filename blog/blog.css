@@ -17,6 +17,7 @@ body{
 }
 
 h2 {
+    font-size: 32px;
     color: #AF1B3F;
 }
 
@@ -32,6 +33,11 @@ header h1{
     text-align: center;
 }
 
+nav{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 nav ul{
     justify-content: end;
     justify-items: end;
@@ -44,6 +50,8 @@ nav ul{
 }
 
 main{
+    max-width: 1400px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
@@ -51,12 +59,34 @@ main{
 article{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
+}
+
+.info{
+    justify-items: right;
+    margin-right: 50px;
+    padding: 20px;
+    border-right: 2px #EFC69B solid;
+    line-height: 10px;
+}
+
+.date{
+    font-size: 24px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
 }
 
 article img{
     max-width: 300px;
-    margin-left: 30px;
 }
 
-
+#filters{
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 20px;
+    border: 2px #EFC69B solid;
+}
