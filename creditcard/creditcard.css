@@ -1,0 +1,91 @@
+label{
+    display: block;
+}
+
+input{
+    padding: 5px;
+}
+
+#cardForm{
+    width: 500px;
+    height: 400px;
+    justify-self: left;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr 1fr;
+    gap: 20px;
+}
+
+/* front card */
+#frontCard{
+    z-index: 1;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: rgb(201, 201, 201);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.289);
+    border-radius: 10px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+
+}
+
+.card-image{
+    justify-self: right;
+}
+
+#cardNumberContainer{
+    grid-column: 1/3;
+}
+
+#cardNumberContainer input{
+    width: 333px;
+}
+
+#cardHolderContainer input{
+    width: 140px;
+}
+
+#expirationContainer input{
+    width: 30px;
+}
+
+
+/* back card */
+#backCard{
+    background-color: rgb(201, 201, 201);
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+}
+
+#cardLine{
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    grid-column: 1/3;
+    background-color: rgb(53, 53, 53);
+}
+
+#cvcCvvContainer{
+    grid-column: 2/3;
+    margin-top: 80px;
+    padding-right: 10px;
+}
+
+#cvcCvvContainer input{
+    width: 55px;
+}
+
+/* Submit button */
+#submitButton{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
