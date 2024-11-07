@@ -1,0 +1,50 @@
+:root{
+    /* CSS HEX */
+--oxford-blue: #0b132bff;
+--space-cadet: #1c2541ff;
+--yinmn-blue: #3a506bff;
+--verdigris: #5bc0beff;
+--fluorescent-cyan: #6fffe9ff;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--verdigris);
+}
+
+h1{
+    color: var(--fluorescent-cyan);
+}
+
+h2{
+ font-size: 33px;
+}
+
+h2, h3{
+    color: var(--oxford-blue);
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+    background-color: var(--space-cadet);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    padding: 8px;
+    color: var(--fluorescent-cyan);
+    text-decoration: none;
+}
+
+main{
+    margin-left: 20px;
+}
+
+section {
+    margin-left: 20px;
+}
