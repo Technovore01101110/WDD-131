@@ -1,0 +1,1 @@
+import * as recipes from "./recipes.mjs";

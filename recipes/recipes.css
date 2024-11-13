@@ -111,7 +111,7 @@ footer{
 
 footer > a:nth-child(2){
     width: 100%;
-    font-size: 15px;
+    font-size: 0.6em;
     text-align: center;
     text-decoration: none;
 }
