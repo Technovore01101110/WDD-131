@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--text-dark);
+}
+
+h1,h2,h3{
+    font-family: var(--secondary-font);
+}
+
+ img {
+	max-width: 100%;
+}
+
+header{
+    width: 100%;
+    border-bottom: #818181 solid 1px;
+}
+
+#heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+#heading > img{
+    width: 74px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 20px 20px;
+}
+
+form > input{
+    border-radius: 8px 0 0 8px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+form > button{
+    width: 50px;
+    background-color: white;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid black;
+
+}
+
+/* Main Section */
+
+.recipe-container{
+    margin: 20px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#recipe_image > img{
+    max-height: 350px;
+}
+
+#recipe_content > h3{
+    width: min-content;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 0px;
+    font-family: var(--primary-font);
+    font-size: 1em;
+}
+
+#recipe_content> h2{
+    margin-bottom: 0px;
+    color: var(--primary-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > a:nth-child(2){
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social > a{
+    width: 50px;
+}
+
+@media (min-width: 700px) {
+
+    .recipe-container{
+        width: 90%;
+        flex-direction: row;
+    }
+
+    #recipe_content{
+        padding-left: 20px;
+    }
+
+    footer{
+        padding: 20px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    footer > a:nth-child(2){
+        text-align: left;
+    }
+}

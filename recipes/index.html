@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Sharp">
+    <meta name="description" content="This website has many Delicious recipes.">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This website has many Delicious recipes.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="URL of the page">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="recipes.css">
+    <script type="module"></script>
+    <link rel="icon" href="../logo.png">
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <img src="images/recipe-book.png" alt="recipe book">
+            <h1>Recipe Book</h1>
+        </div>
+        <form action="">
+            <input name="search" type="text" placeholder="Find a Recipe">
+            <button><img src="images/search.svg" alt=""></button>
+        </form>
+    </header>
+    <main>
+        <section class="recipe-container">
+            <div id="recipe_image">
+                <img src="images/chocolate-chip-cookies.jpg" alt="chocolate-chip-cookies">
+            </div>
+            <div id="recipe_content">
+                <h3>dessert</h3>
+                <h2>Chocolate Chip Cookies</h2>
+                <span
+	                class="rating"
+	                role="img"
+	                aria-label="Rating: 4 out of 5 stars"
+                    >   
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+	                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p>
+                    Delicious soft chocolate chip cookies with coconut.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+    </footer>
+</body>
+</html>
