@@ -73,8 +73,8 @@ function init(){
 function filterRecipes(query){
     const filtered = recipes.filter((item) => {
         return(
-            item.name.includes(query) ||
-            item.description.includes(query) ||
+            item.name.toLowerCase().includes(query) ||
+            item.description.toLowerCase().includes(query) ||
             item.tags.find((tag) => tag.toLowerCase().includes(query))
         );
     });
