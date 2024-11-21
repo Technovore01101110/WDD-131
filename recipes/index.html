@@ -12,45 +12,22 @@
     <meta property="og:url" content="https://technovore01101110.github.io/WDD-131/recipes">
     <meta name="twitter:card" content="https://technovore01101110.github.io/WDD-131/recipes/images/recipe-book.png">
     <link rel="stylesheet" href="recipes.css">
-    <script type="module"></script>
+    <script src="recipes.js" type="module"></script>
     <link rel="icon" href="../logo.png">
     <title>Recipes</title>
 </head>
 <body>
     <header>
-        <div id="heading">
+        <div id="header_content">
             <img src="images/recipe-book.png" alt="recipe book">
             <h1>Recipe Book</h1>
         </div>
         <form action="">
-            <input name="search" type="text" placeholder="Find a Recipe">
-            <button><img src="images/search.svg" alt="search button"></button>
+            <input id="search" name="search" type="text" placeholder="Find a Recipe">
+            <button id="search-button"><img src="images/search.svg" alt="search button"></button>
         </form>
     </header>
-    <main>
-        <section class="recipe-container">
-            <div id="recipe_image">
-                <img src="images/chocolate-chip-cookies.jpg" alt="chocolate-chip-cookies">
-            </div>
-            <div id="recipe_content">
-                <h2>dessert</h2>
-                <h2>Chocolate Chip Cookies</h2>
-                <span
-	                class="rating"
-	                role="img"
-	                aria-label="Rating: 4 out of 5 stars"
-                    >   
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p>
-                    Delicious soft chocolate chip cookies with coconut.
-                </p>
-            </div>
-        </section>
+    <main id="content">
     </main>
     <footer>
         <div class="social">

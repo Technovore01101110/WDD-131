@@ -30,7 +30,7 @@ header{
     border-bottom: #818181 solid 1px;
 }
 
-#heading{
+#header_content{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -43,7 +43,7 @@ h1{
     margin: 0px;
 }
 
-#heading > img{
+#header_content > img{
     width: 74px;
     object-fit: contain;
     margin-bottom: 12px;
@@ -63,7 +63,7 @@ form > input{
     font-size: 1em;
 }
 
-form > button{
+#search-button{
     width: 50px;
     background-color: white;
     border-radius: 0 8px 8px 0;
@@ -84,9 +84,14 @@ form > button{
     border-radius: 10px;
 }
 
-#recipe_content > h2:nth-child(1){
+#recipe_content > .tags{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+#recipe_content > .tags > h2{
     color: #333;
-    width: min-content;
     padding: 5px;
     border: 2px solid black;
     margin: 0px;
@@ -140,6 +145,7 @@ footer > a:nth-child(2){
 
     #recipe_content{
         padding-left: 20px;
+        max-width: 62%;
     }
 
     footer{
