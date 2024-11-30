@@ -2,7 +2,7 @@ const recipes = [
     {
         name: 'Beef Stroganoff',
         image: './images/this-and-that-recipes/beef-stroganoff.jpg',
-        tags: [lunch, pasta],
+        tags: ['lunch', 'pasta'],
         rating: null,
         time: null,
         description: ''
@@ -10,7 +10,7 @@ const recipes = [
     {
         name: 'Cafe Rio Chicken',
         image: './images/this-and-that-recipes/cafe-rio-chicken-burritos.jpg',
-        tags: [lunch, dinner],
+        tags: ['lunch', 'dinner'],
         rating: null,
         time: null,
         description: ''
@@ -18,7 +18,7 @@ const recipes = [
     {
         name: 'Chicken Pesto Pasta',
         image: './images/this-and-that-recipes/chicken-pesto-pasta.jpg',
-        tags: [lunch, pasta],
+        tags: ['lunch', 'pasta'],
         rating: null,
         time: null,
         description: ''
@@ -26,7 +26,7 @@ const recipes = [
     {
         name: 'Chocolat Zucchini Bread',
         image: './images/this-and-that-recipes/chocolate-zucchini-bread.jpg',
-        tags: [lunch, bread],
+        tags: ['lunch', 'bread'],
         rating: null,
         time: null,
         description: ''
@@ -34,7 +34,7 @@ const recipes = [
     {
         name: 'Fruit Salad',
         image: './images/this-and-that-recipes/fruit-salad.jpg',
-        tags: [lunch, dip, fruit],
+        tags: ['lunch', 'dip', 'fruit'],
         rating: null,
         time: null,
         description: ''
@@ -42,7 +42,7 @@ const recipes = [
     {
         name: 'Grilled Chicken',
         image: './images/this-and-that-recipes/grilled-chicken.jpg',
-        tags: [lunch, pasta],
+        tags: ['dinner', 'meat', 'grilled' ],
         rating: null,
         time: null,
         description: ''
@@ -88,11 +88,27 @@ const recipes = [
         description: ''
     },
     {
-        name: 'Beef Stroganoff',
+        name: 'Strawberry Cream Cheese Wontons',
         image: './images/this-and-that-recipes',
         tags: [lunch, pasta],
         rating: null,
         time: null,
         description: ''
-    }
+    },
+    {
+        name: 'German Pancakes',
+        image: './images/this-and-that-recipes',
+        tags: [lunch, pasta],
+        rating: null,
+        time: null,
+        description: ''
+    },
+    {
+        name: 'Cheesey Green Bean Casserole',
+        image: './images/this-and-that-recipes',
+        tags: [lunch, pasta],
+        rating: null,
+        time: null,
+        description: ''
+    },
 ]
