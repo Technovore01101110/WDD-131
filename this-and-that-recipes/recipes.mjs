@@ -95,7 +95,7 @@ const recipes = [
         tags: ['side', 'green beans'],
         rating: 4,
         time: null,
-        description: '',
-        instructions: ''
+        description: 'coming soon',
+        instructions: 'coming soon'
     },
 ]
