@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --primary-color: #600D0D;
+    --secondary-color:#F7F3E3;
+    --accent1-color: #32343B;
+    --accent2-color: #0F1011;
+    --heading-font: "Charm", cursive;
+    --paragraph-font: "Mulish", cursive;
+}
+
+body{
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--heading-font);
+}
+
+
+
+header{
+    background-color: var(--secondary-color);
+    padding-bottom: 30px;
+    justify-items;: center:
+}
+
+.logo{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.currentPage{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+main{
+    padding: 20px;
+}
+
+#banner{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#banner h1{
+    font-size: 2rem;
+}
+
+#banner h2{
+    font-size: 1.25rem;
+}
+
+#search{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--accent1-color);
+}
+
+#searchBar{
+    grid-row: 1/2;
+    border: 1px solid var(--accent1-color);
+    border-radius: 8px 0px 0px 8px;
+}
+
+#search button:nth-child(2){
+    grid-row: 1/2;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+}
+
+#filterButton{
+    margin-top: 20px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color: var(--accent1-color);
+    font-size: 1rem;
+}
+
+#filters{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1/3;
+}
+
+.filter input{
+    width: 50px;
+}
+
+footer{
+    background-color: var(--secondary-color);
+}
