@@ -19,7 +19,9 @@ h1,h2,h3,h4{
     font-family: var(--heading-font);
 }
 
-
+img{
+    width: 100%;
+}
 
 header{
     background-color: var(--secondary-color);
@@ -221,4 +223,31 @@ footer h4{
     font-family: var(--paragraph-font);
     font-size: 0.5rem;
     text-align: center;
+}
+
+
+
+/* Tools & Tips Page */
+
+
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#hero img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: -3px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+}
+
+#hero h1{
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 20px;
+    margin-top: 10px;
 }
