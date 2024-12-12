@@ -20,7 +20,7 @@ const recipes = [
     {
         name: 'Chocolate Zucchini Bread',
         image: './images/this-and-that-recipes-images/chocolate-zucchini-bread.jpg',
-        tags: ['quick bread', 'bread', 'chocolate', 'zucchini'],
+        tags: ['quick bread', 'bread', 'chocolate', 'zucchini', 'quick bread','dessert'],
         rating: 4,
         time: 70,
         description: 'Super rich and chocolatey.  My kids were super excited about this treat.  I didn\'t mention it had zucchini...no one needed to know :) ',
