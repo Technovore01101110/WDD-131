@@ -23,6 +23,50 @@ img{
     width: 100%;
 }
 
+.viewer{
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    grid-template-rows: 33% 34% 33%;
+ }
+
+.close-viewer{
+    margin-left: auto;
+    width: 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+}
+
+#document{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    display: grid;
+    color: var(--accent1-color);
+}
+
+#document img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#document h3{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#document h4{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
 header{
     background-color: var(--secondary-color);
     padding-bottom: 30px;
@@ -110,7 +154,7 @@ main{
     margin: 16px 20px 16px 0px;
 }
 
-#filterButton{
+.filterButton{
     padding-top: 8px;
     padding-bottom: 8px;
     grid-column: 1/5;
@@ -120,17 +164,25 @@ main{
     border: none;
     border-top: 1px solid var(--accent2-color);
     font-size: 1rem;
+    transition: 0.25s; 
+}
+
+.filterActive{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    border: none;
+    border-top: 1px solid var(--accent2-color);
+    font-size: 1rem;
     box-shadow: 0px 4px 2px #8b897dc0;
     transition: 0.25s;
 }
 
-#filterButton:hover{
-    transition: 0.25s;
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
-}
 
-#filters{
+.filters{
     padding: 10px 0px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -176,7 +228,8 @@ main{
 }
 
 .tags h3{
-    width: min-content;
+    width: max-content;
+    height: min-content;
     margin: 5px;
     padding: 10px;
     background-color: #600d0de3;
@@ -303,6 +356,11 @@ footer h4{
 /* Tablet Change */
 
 @media screen and (min-width: 768px) {
+    #document img{
+        width: 60%;
+        margin: 0 auto;
+    }
+
     header{
         display: flex;
         flex-direction: row;
@@ -325,15 +383,9 @@ footer h4{
     nav a{
         padding: 20px;
     }
-
-
-    #filterButton{
-        display: none;
-    }
     
-    #filters{
+    .filters{
         grid-column: 1/4;
-        display: flex;
         flex-direction: row;
         gap: 10%;
     }
@@ -382,4 +434,8 @@ footer h4{
     #hero h1 {
         font-size: 800%;
     }
+}
+
+.hidden{
+    display: none;
 }

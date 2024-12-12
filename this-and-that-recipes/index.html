@@ -2,16 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="author" content="Nathan Sharp">
+        <meta name="description" content="A recipe site full of family favorites.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>This & That Recipes</title>
         <link rel="icon" href="./images/logo.png">
+        <link rel="apple-touch-icon" href="./images/logo.png">
+        <script src="./main.js" type="module"></script>
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
     <header>
         <img class="logo" src="images/logo.png" alt="">
         <nav>
-            <a class="currentPage">Home</a>
+            <a href="#" class="currentPage">Home</a>
             <a href="tips-and-tools.html">Tools & Tips</a>
         </nav>
     </header>
@@ -21,30 +25,30 @@
             <h2>Mom's cooking: where recipes are only a guideline.</h2>
         </div>
         <form id="search" action="">
-            <input type="text" name="searchbar" id="searchBar" placeholder="Example: Pancakes">
-            <button type="submit">🔍</button>
-            <button id="filterButton">Filter</button>
-            <div id="filters">
+            <input type="text" name="searchbar" id="searchBar" value='' placeholder="Example: Pancakes">
+            <button id="searchButton" type="submit">🔍</button>
+            <button class="filterButton">Filter</button>
+            <div class="filters hide">
                 <div class="filter">
                     <label for="sort">Sort By:</label>
                     <select name="sort" id="sort">
                         <option value="aToz">A-Z</option>
                         <option value="time">Time</option>
-                        <option value="type">Dish Type</option>
                     </select>
                 </div>
                 <div class="filter">    
                     <label for="type">Type of dish:</label>
                     <select name="type" id="type">
                         <option value="any">Any</option>
-                        <option value="main">Main</option>
+                        <option value="main dish">Main</option>
                         <option value="side">Side</option>
                         <option value="drink">Drink</option>
+                        <option value="dessert">Dessert</option>
                     </select>
                 </div>
                 <div class="filter">
-                    <label for="time">Max Time:</label>
-                    <input type="text" name="time" id="time">
+                    <label for="time">Max Prep Time:</label>
+                    <input type="text" name="time" value="" placeholder="Min" id="time">
                 </div>
                 <div class="filter">
                     <label for="rating">Rating:</label>
@@ -60,67 +64,13 @@
             </div>
         </form>
         <section id="recipes">
-            <article class="recipe">
-                <img src="images/this-and-that-recipes-images/air-fried-chicken.jpg" alt="Air Fried Chicken"> 
-                <div>
-                    <h2>Air Fried Chicken</h2>
-                    <h3>Rating: ⭐⭐⭐⭐☆</h3>
-                    <div class="tags">
-                        <h3>Tags</h3>
-                        <h3>Tags</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Pariatur nisi temporibus aliquid eum voluptates
-                         modi velit ipsam non corporis nesciunt, cupiditate 
-                         iusto, optio quam reiciendis voluptatibus maxime ullam, 
-                         eius impedit!
-                    </p>
-                </div>  
-            </article>
-            <article class="recipe">
-                <img src="images/this-and-that-recipes-images/beef-stroganoff.jpg" alt=""> 
-                <div>
-                    <h2>Recipe</h2>
-                    <h3>Rating: ⭐⭐⭐⭐☆</h3>
-                    <div class="tags">
-                        <h3>Tags</h3>
-                        <h3>Tags</h3>
-                        <h3>Tags</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Pariatur nisi temporibus aliquid eum voluptates
-                         modi velit ipsam non corporis nesciunt, cupiditate 
-                         iusto, optio quam reiciendis voluptatibus maxime ullam, 
-                         eius impedit!
-                    </p>
-                </div>  
-            </article>
-            <article class="recipe">
-                <img src="images/this-and-that-recipes-images/cheesey-green-bean-casserole.png" alt=""> 
-                <div>
-                    <h2>Recipe</h2>
-                    <h3>Rating: ⭐⭐⭐⭐☆</h3>
-                    <div class="tags">
-                        <h3>Tags</h3>
-                        <h3>Tags</h3>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Pariatur nisi temporibus aliquid eum voluptates
-                         modi velit ipsam non corporis nesciunt, cupiditate 
-                         iusto, optio quam reiciendis voluptatibus maxime ullam, 
-                         eius impedit!
-                    </p>
-                </div>  
-            </article>
+            <!-- Javasript adds the articles in. -->
         </section>
     </main>
     <footer>
         <img class="logo-bottom" src="./images/logo.png" alt="">
         <div class="bottom-nav">
-            <a>Home</a>
+            <a href="#">Home</a>
             <a href="./tips-and-tools.html">Tools & Tips</a>
         </div>
         <div class="social">
