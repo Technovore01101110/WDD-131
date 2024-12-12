@@ -169,6 +169,7 @@ function viewerTemplate(recipe) {
 
 //Expand page.
 function viewHandler(){
+    const main = document.body
     const target = event.target;
     const article = target.closest('article');
     const name = article.querySelector('h2').innerText;
@@ -176,6 +177,7 @@ function viewHandler(){
     const recipe = findRecipe(name);
     console.log(recipe)
     const html = viewerTemplate(recipe);
+    main.classList.add('lock');
     document.body.insertAdjacentHTML("afterbegin", html);
     document.querySelector('.close-viewer').addEventListener('click', closeViewer);
 }
@@ -188,6 +190,7 @@ function findRecipe(query){
 }
 
 function closeViewer(){
+    document.body.classList.remove('lock');
     const parent = event.target.closest('div');
     parent.remove();
 }
