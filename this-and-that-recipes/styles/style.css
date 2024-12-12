@@ -74,7 +74,7 @@ img{
 header{
     background-color: var(--secondary-color);
     padding-bottom: 30px;
-    justify-items;: center:
+    justify-items: center;
 }
 
 .logo{
@@ -339,7 +339,7 @@ footer h4{
 
 .slide_active{
     width: 100%;
-    height: 40px;
+    height: 50px;
     margin-bottom: 0px;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
@@ -350,7 +350,6 @@ footer h4{
 }
 
 .slide_active::before{
-    transition: 0.25;
     content: "▲";
     padding: 10px;
 }
